@@ -1,4 +1,4 @@
-fname,fold,target,category,esc10,src_file,take
+fname,fold,target,labels,esc10,src_file,take
 1-101336-A-30,1,30,door_wood_knock,FALSE,101336,A
 1-103995-A-30,1,30,door_wood_knock,FALSE,103995,A
 1-103999-A-30,1,30,door_wood_knock,FALSE,103999,A
