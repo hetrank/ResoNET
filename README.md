@@ -1,4 +1,4 @@
-# ResoNET - Sound Classification for Deaf Accessibility
+# ResoNET - An Assistive Audio Recognition System for the Hearing Impaired via Metric Learning
 
 ## Objective and Description
 ResoNET is a digital accessibility solution powered by deep learning models that provides real-time sound classification and environmental audio awareness for deaf and hard-of-hearing individuals. The application continuously listens to environmental audio and processes sounds through custom-trained neural networks to provide haptic feedback and visual notifications of important sounds.
@@ -121,19 +121,6 @@ The repository includes three model implementations:
 - Recommended sample rate: 16kHz or 44.1kHz
 - Duration: Typically 1-5 seconds per sample
 
-**Dataset Structure:**
-```
-Data/
-├── class1/
-│   ├── sound1.wav
-│   ├── sound2.wav
-│   └── ...
-├── class2/
-│   ├── sound1.wav
-│   └── ...
-└── ...
-```
-
 ## Repository Structure
 
 ```
@@ -159,7 +146,7 @@ ResoNET/
 - Input: 13-D MFCC features or spectrogram
 - Architecture: 2-3 convolutional layers with pooling
 - Output: Sound class predictions with probabilities
-- Accuracy: ~85-92% on test data
+- Accuracy: ~73% on test data
 
 ### Audio RNN Model
 - Input: Sequential MFCC frames
@@ -221,23 +208,10 @@ VALIDATION_SPLIT = 0.2
 - Solution: Verify model is in .tflite format in assets/model.tflite
 - Check file permissions and path configuration
 
-**Issue: Poor classification accuracy**
-- Solution: Expand training dataset with more samples
-- Augment audio data using pitch shifting and time stretching
-- Adjust model hyperparameters
-
 **Issue: Slow inference on device**
 - Solution: Quantize model to int8 format
 - Reduce input feature dimensions
 - Use YAMNet for faster inference
-
-## Future Enhancements
-
-- Multi-language support for labels
-- Real-time model retraining on device
-- Integration with CI/CD services
-- Extended sound classification taxonomy
-- Battery optimization improvements
 
 ## Contributing
 
@@ -255,13 +229,12 @@ This project is open source and available for educational and accessibility purp
 
 - Built with TensorFlow and Flutter
 - Inspired by accessibility needs of the deaf community
-- Special thanks to contributors and testers
 
 ## Contact and Support
 
 For questions, issues, or suggestions:
 - Open an issue on GitHub
-- Contact the maintainers directly
+- Contact to 202301081@dau.ac.in or 202301095@dau.ac.in
 - Check existing documentation and notebooks
 
 ## References
@@ -272,7 +245,4 @@ For questions, issues, or suggestions:
 - [MFCC Feature Extraction](https://librosa.org/doc/main/generated/librosa.feature.mfcc.html)
 
 ---
-
-**Last Updated:** 2026-04-30
-**Version:** 1.0.0
-**Status:** Active Development
+Built with ❤️ for Hearing Impaired Community
