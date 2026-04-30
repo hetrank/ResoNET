@@ -1,0 +1,5 @@
+streamlit
+numpy
+tensorflow
+wave
+streamlit-mic-recorder
