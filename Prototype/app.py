@@ -25,7 +25,7 @@ st.markdown("---")
 def load_model():
     try:
         # Assumes assets/models/resonet_model.tflite exists
-        interpreter = tf.lite.Interpreter(model_path="assets/models/resonet_model.tflite")
+        interpreter = tf.lite.Interpreter(model_path="resonet_model.tflite")
         interpreter.allocate_tensors()
         return interpreter
     except Exception as e:
